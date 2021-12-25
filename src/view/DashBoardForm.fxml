@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="589.0" prefWidth="924.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="680.0" layoutX="122.0" layoutY="41.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/5e260a99e459c993e8bb843849583aef.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="102.0" layoutX="220.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/icons8-student-registration-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="336.0" layoutX="369.0" layoutY="210.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/5b3769bc3c2ead39dec17e2d9f1913bd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="102.0" layoutX="230.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/icons8-add-property-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="336.0" layoutX="369.0" layoutY="340.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/3281e1b6f9255d8bcc88eaf3e8fa7737.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="122.0" layoutX="216.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/icons8-view-details-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="336.0" layoutX="369.0" layoutY="471.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/af26d17f3573374406ab471b87204a36.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="216.0" layoutY="199.0" onAction="#RegisterStudentOnAction" opacity="0.0" prefHeight="111.0" prefWidth="483.0" />
+      <JFXButton layoutX="216.0" layoutY="325.0" onAction="#TrainingProgramsOnAction" opacity="0.0" prefHeight="111.0" prefWidth="483.0" />
+      <JFXButton layoutX="221.0" layoutY="456.0" onAction="#StudentDetailsOnAction" opacity="0.0" prefHeight="111.0" prefWidth="483.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="863.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TrainingProgramFormController">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="581.0" layoutX="367.0" layoutY="21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/9dadad7c2edc2b384f362a1c0d824694.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtProgramID" layoutX="120.0" layoutY="235.0" prefHeight="31.0" prefWidth="266.0" promptText="Program ID" />
+      <JFXTextField fx:id="txtProgram" layoutX="531.0" layoutY="235.0" prefHeight="31.0" prefWidth="266.0" promptText="Program" />
+      <JFXTextField fx:id="txtDuration" layoutX="930.0" layoutY="235.0" prefHeight="31.0" prefWidth="266.0" promptText="Duration" />
+      <JFXTextField fx:id="txtFee" layoutX="120.0" layoutY="333.0" prefHeight="31.0" prefWidth="266.0" promptText="Fee(LKR)" />
+      <JFXButton buttonType="RAISED" layoutX="953.0" layoutY="416.0" onAction="#btnAddTraining" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Add Training" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="675.0" layoutY="416.0" onAction="#btnDelete" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="392.0" layoutY="416.0" onAction="#btnUpdate" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblTrainingProgram" layoutX="120.0" layoutY="528.0" prefHeight="314.0" prefWidth="1085.0">
+        <columns>
+          <TableColumn fx:id="colProgramID" prefWidth="196.0" text="Program ID" />
+          <TableColumn fx:id="colProgram" prefWidth="321.0" text="Program" />
+            <TableColumn fx:id="colDuration" prefWidth="308.0" text="Duration" />
+            <TableColumn fx:id="colFee" prefWidth="259.0" text="Fee(LKR)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

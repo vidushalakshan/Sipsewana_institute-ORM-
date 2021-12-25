@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="863.0" prefWidth="1314.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterStudentFormController">
+   <children>
+      <ImageView fitHeight="151.0" fitWidth="517.0" layoutX="399.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/842fee7fa85df05fe561251b8d74d239.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtRegisterName" layoutX="45.0" layoutY="152.0" prefHeight="31.0" prefWidth="245.0" promptText="Register Name" />
+      <JFXTextField fx:id="txtStudentName" layoutX="378.0" layoutY="152.0" prefHeight="31.0" prefWidth="245.0" promptText="Student Name" />
+      <JFXTextField fx:id="txtStudentNumber" layoutX="708.0" layoutY="152.0" prefHeight="31.0" prefWidth="245.0" promptText="Student Number" />
+      <JFXTextField fx:id="txtEmail" layoutX="1024.0" layoutY="152.0" prefHeight="31.0" prefWidth="245.0" promptText="E-Mail" />
+      <JFXTextField fx:id="txtMobileNumber" layoutX="45.0" layoutY="243.0" prefHeight="31.0" prefWidth="245.0" promptText="Mobile Number" />
+      <JFXDatePicker fx:id="txtBirthDate" layoutX="378.0" layoutY="243.0" prefHeight="31.0" prefWidth="245.0" promptText="Birth Date" />
+      <JFXComboBox fx:id="cmbGender" layoutX="708.0" layoutY="243.0" prefHeight="31.0" prefWidth="245.0" promptText="Gender" />
+      <JFXTextField fx:id="txtNic" layoutX="1024.0" layoutY="243.0" prefHeight="31.0" prefWidth="245.0" promptText="Nic" />
+      <JFXComboBox fx:id="cmbProgram" layoutX="45.0" layoutY="336.0" prefHeight="31.0" prefWidth="245.0" promptText="Program" />
+      <JFXTextField fx:id="txtDuration" layoutX="378.0" layoutY="336.0" prefHeight="31.0" prefWidth="245.0" promptText="Duration" />
+      <JFXTextField fx:id="txtFee" layoutX="708.0" layoutY="336.0" prefHeight="31.0" prefWidth="245.0" promptText="Fee(LKR)" />
+      <JFXTextField fx:id="txtPay" layoutX="1024.0" layoutY="336.0" prefHeight="31.0" prefWidth="245.0" promptText="Pay" />
+      <TableView fx:id="tblStudentsRegister" layoutX="56.0" layoutY="512.0" prefHeight="331.0" prefWidth="1233.0">
+        <columns>
+          <TableColumn fx:id="colRegisterName" prefWidth="159.99996948242188" text="Register Name" />
+          <TableColumn fx:id="colStudentName" prefWidth="158.0" text="Student Name" />
+            <TableColumn fx:id="colStudentNumber" prefWidth="91.0" text="Student No" />
+            <TableColumn fx:id="colEmail" prefWidth="168.0" text="E-Mail" />
+            <TableColumn fx:id="colMobileNumber" prefWidth="154.0" text="Mobile Number" />
+            <TableColumn fx:id="colBirthDay" prefWidth="165.0" text="Birth Date" />
+            <TableColumn fx:id="colGender" prefWidth="169.0" text="Gender" />
+            <TableColumn fx:id="colNic" prefWidth="167.0" text="Nic" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1049.0" layoutY="423.0" onAction="#btnRegister" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="760.0" layoutY="423.0" onAction="#btnDelete" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="475.0" layoutY="423.0" onAction="#btnUpdate" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

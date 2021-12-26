@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="595.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFromController">
+   <children>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="351.0" layoutY="226.0" prefHeight="38.0" prefWidth="283.0" promptText="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassWord" focusColor="#04123c" labelFloat="true" layoutX="351.0" layoutY="318.0" prefHeight="38.0" prefWidth="283.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="376.0" layoutY="423.0" onAction="#AdminLoginOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="159.0" fitWidth="591.0" layoutX="36.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/5e260a99e459c993e8bb843849583aef.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="291.0" fitWidth="283.0" layoutX="20.0" layoutY="211.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/image/—Pngtree—educational%20institute%20vector%20icon_3758219.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="312.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/220px-User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="313.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/232962.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,11 +1,8 @@
-package entity;
+package dto;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.util.Date;
-@Entity(name = "student_reg")
-public class Student implements SuperEntity {
-    @Id
+
+public class StudentDto {
     private String regnum;
     private String studentname;
     private String studentnum;
@@ -15,10 +12,10 @@ public class Student implements SuperEntity {
     private String gender;
     private String nic;
 
-    public Student() {
+    public StudentDto() {
     }
 
-    public Student(String regnum, String studentname, String studentnum, String email, double mobilenum, Date birthday, String gender, String nic) {
+    public StudentDto(String regnum, String studentname, String studentnum, String email, double mobilenum, Date birthday, String gender, String nic) {
         this.regnum = regnum;
         this.studentname = studentname;
         this.studentnum = studentnum;
@@ -61,7 +58,7 @@ public class Student implements SuperEntity {
         this.email = email;
     }
 
-    public double getMobilenum(int i) {
+    public double getMobilenum() {
         return mobilenum;
     }
 

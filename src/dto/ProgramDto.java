@@ -1,22 +1,15 @@
-package entity;
+package dto;
 
-import dto.ProgramDto;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity(name = "program")
-public class Program extends ProgramDto implements SuperEntity {
-    @Id
+public class ProgramDto {
     private String pid;
     private String program;
     private String duration;
     private double fee;
 
-    public Program() {
+    public ProgramDto() {
     }
 
-    public Program(String pid, String program, String duration, double fee) {
+    public ProgramDto(String pid, String program, String duration, double fee) {
         this.pid = pid;
         this.program = program;
         this.duration = duration;

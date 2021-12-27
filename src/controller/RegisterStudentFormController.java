@@ -3,7 +3,9 @@ package controller;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
+import entity.Program;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -15,9 +17,9 @@ public class RegisterStudentFormController {
     public JFXTextField txtEmail;
     public JFXTextField txtMobileNumber;
     public JFXDatePicker txtBirthDate;
-    public JFXComboBox cmbGender;
+    public JFXComboBox<String> cmbGender;
     public JFXTextField txtNic;
-    public JFXComboBox cmbProgram;
+    public JFXComboBox<String> cmbProgram;
     public JFXTextField txtDuration;
     public JFXTextField txtFee;
     public JFXTextField txtPay;

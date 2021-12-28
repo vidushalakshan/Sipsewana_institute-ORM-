@@ -25,25 +25,21 @@ public class ProgramBoImpl implements ProgramBo {
     }
 
     @Override
-    public List<ProgramDto> find() {
-        /*List<ProgramDto> list = programBo.find();
-        ArrayList<ProgramDto> dtoArrayList = new ArrayList<>();
+    public ArrayList<ProgramDto> find() throws Exception {
+        List<Program> all = programBo.findAll();
+        ArrayList<ProgramDto> itemDTOS = new ArrayList<>();
 
-        ProgramDto programDTO = null;
 
-        for (ProgramDto program : list
-        ) {
-            dtoArrayList.add(new ProgramDto(
+        for (Program programDTO : all) {
+            itemDTOS.add(new ProgramDto(
                     programDTO.getPid(),
                     programDTO.getProgram(),
                     programDTO.getDuration(),
                     programDTO.getFee()
             ));
-
         }
-        return dtoArrayList;*/
+        return itemDTOS;
 
-        return null;
     }
 
     @Override

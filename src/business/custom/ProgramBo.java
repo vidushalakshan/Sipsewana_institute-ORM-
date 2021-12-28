@@ -2,14 +2,14 @@ package business.custom;
 
 import business.SuperBo;
 import dto.ProgramDto;
+import entity.Program;
 
-import java.sql.SQLException;
-import java.util.List;
+import java.util.ArrayList;
 
 public interface ProgramBo extends SuperBo {
     public boolean add(ProgramDto programDTO) throws Exception;;
 
-    List<ProgramDto> find() throws SQLException, ClassNotFoundException;;
+    ArrayList<ProgramDto> find() throws Exception;;
 
     boolean delete(String id) throws Exception;;
 

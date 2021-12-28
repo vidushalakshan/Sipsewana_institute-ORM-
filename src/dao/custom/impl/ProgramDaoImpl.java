@@ -5,6 +5,7 @@ import entity.Program;
 import entity.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import util.FactoryConfuguration;
 
 import java.util.List;
@@ -48,12 +49,21 @@ public class ProgramDaoImpl implements ProgramDao {
     }
 
     @Override
-    public Program find(String s) throws Exception {
+    public Program find() throws Exception {
         return null;
     }
 
     @Override
     public List<Program> findAll() throws Exception {
-        return null;
+        Session session = FactoryConfuguration.getInstance().getSession();
+
+        Transaction transaction = session.beginTransaction();
+
+        Query query = session.createQuery("from program ");
+        List <Program> list = query.list();
+
+        transaction.commit();
+        session.close();
+        return list;
     }
 }

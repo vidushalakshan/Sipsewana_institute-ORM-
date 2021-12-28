@@ -4,7 +4,6 @@ import dao.custom.StudentDao;
 import entity.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import util.FactoryConfuguration;
 
 import java.util.List;
@@ -50,7 +49,7 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public Student find(String s) throws Exception {
+    public Student find() throws Exception {
         return null;
 
     }
